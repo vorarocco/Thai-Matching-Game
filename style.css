@@ -1,0 +1,95 @@
+h1{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    color:black;
+    text-align: center;
+    margin: 0 auto;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto ;
+}
+.start{
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    color: tomato;
+    /* text-shadow: whitesmoke; */
+    text-align: center;
+    margin: 180px 0px 0px 0px;
+
+
+}
+body{
+    background:url(images/body_bg.png) 100vw;
+    background-attachment: fixed;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    /* grid-template-rows: repeat(3, auto);  */
+    /* grid-template-areas: "card card2 card card card card"
+    "card card card card card card card card"
+    "card card card card card card"; */ 
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+
+}
+.card{
+    /* background:none; */
+    border-radius: 10%;
+    height: 160px;
+    width: 125px;
+    position: relative;
+    overflow: hidden;
+}
+.no-card{
+    background: none;
+}
+.card-back{
+    background:radial-gradient(white,turquoise);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    height: 145px;
+    width: 165px;
+}
+.card-front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.ans{
+    height: 160px;
+    width: 125px;
+}
+.game-container.x .card-front{
+    display: none;
+}
+.card.x .card-front{
+    display: none;
+}
+
+.card-back.x{
+    display: none;
+}
+
+.game-container.hidecard .card{
+    display: none;
+}
+
+.card:hover .card-back{
+    transform: scale(150%);
+}
+
