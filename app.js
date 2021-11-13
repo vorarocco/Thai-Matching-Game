@@ -43,14 +43,50 @@ function shuffle(array) {
 shuffle(randomCArray)
 document.querySelectorAll(".ans").forEach((card,i)=>{
 card.src=`./images/${randomCArray[i]}.png`
-})
+let newCards = card.src
+// console.log(newCards)
+}) 
+
+let selectCard = []
 
 function clickC() {
     for(let i = 0 ; i < cards.length ; i++){
         cards[i].addEventListener("click", () => {
             cards[i].classList.remove("x")
+            selectCard.push(cards[i])
+            if(selectCard.length === 2){
+                setTimeout(checkForMatch,500)
+            }
+            // console.log(selectCard)
         })
+        function checkForMatch(card1,card2){
+            let cardF = selectCard[0]
+            let cardS = selectCard[1]
+            if( cardF.innerHTML === cardS.innerHTML){
+                console.log('match')
+            } else if(cardF !== cardS){
+                cardF.classList.add("x")
+                cardS.classList.add("x")
+                console.log('no match')
+                selectCard = []
+
+            } 
+        }
+        
     }
 }
- 
 clickC()
+
+
+// function checkForMatch(){
+//     let card1 = 
+//     let card2 = 
+//     if( card1.src === card2.src){
+//         console.log('match')
+//     } else if(card1 !== card2){
+//         console.log('no match')
+//     } 
+// }
+
+
+// console.dir(randomCArray)
