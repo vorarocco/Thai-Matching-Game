@@ -21,7 +21,11 @@ let ansCard = document.querySelectorAll('.ans')
 
 // cards.filter(cards!== noCards)
 
-let randomCArray = ["ans1","ans2","ans3","ans4","ans5","ans6","ans7","ans8","ans9","ans10","ans1","ans2","ans3","ans4","ans5","ans6","ans7","ans8","ans9","ans10"]
+let randomCArray = [
+    "ans1","ans2","ans3","ans4","ans5",
+    "ans6","ans7","ans8","ans9","ans10",
+    "ans1","ans2","ans3","ans4","ans5",
+    "ans6","ans7","ans8","ans9","ans10"]
 
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
@@ -44,10 +48,17 @@ shuffle(randomCArray)
 document.querySelectorAll(".ans").forEach((card,i)=>{
 card.src=`./images/${randomCArray[i]}.png`
 let newCards = card.src
-// console.log(newCards)
+// console.dir(newCards)
 }) 
 
 let selectCard = []
+let matchedCard = []
+
+function win(){ 
+    cards.classList === '.card x'
+    console.log("win!")
+}
+
 
 function clickC() {
     for(let i = 0 ; i < cards.length ; i++){
@@ -62,9 +73,19 @@ function clickC() {
         function checkForMatch(card1,card2){
             let cardF = selectCard[0]
             let cardS = selectCard[1]
-            if( cardF.innerHTML === cardS.innerHTML){
+            console.log(cardF.children[1].children[0],cardS.children[1].children[0])
+
+            if( cardF.children[1].children[0].src === cardS.children[1].children[0].src){
+                matchedCard.push(card1, card2)
+                if(matchedCard.length === 20){
+                    win()
+                    clearInterval(playerTimer)
+                }
                 console.log('match')
-            } else if(cardF !== cardS){
+                selectCard = []
+                // console.log(matchedCard)
+
+            } else {
                 cardF.classList.add("x")
                 cardS.classList.add("x")
                 console.log('no match')
@@ -77,16 +98,10 @@ function clickC() {
 }
 clickC()
 
+let playerTimer = setInterval(timeRun, 1000)
+function timeRun(){
+    let time = document.querySelector('.timer').innerText 
+    time++
+    document.querySelector('.timer').innerText = time
+}
 
-// function checkForMatch(){
-//     let card1 = 
-//     let card2 = 
-//     if( card1.src === card2.src){
-//         console.log('match')
-//     } else if(card1 !== card2){
-//         console.log('no match')
-//     } 
-// }
-
-
-// console.dir(randomCArray)
