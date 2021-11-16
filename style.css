@@ -16,13 +16,63 @@ h2{
  
 } */
 
-.playbutton{
+.overlay-playbutton{
+    position: fixed;
     width: 600px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: block;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto; 
-    /* overflow: hidden; */
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
+
+.overlay-start{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.overlay-start.visible{
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+@keyframes overlay-grow {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 0;
+    }
+    to {
+      background-color: rgba(0, 0, 0, .8);
+      font-size: 10em;
+    }
+  }
+
 body{
     background:url(images/body_bg.png) 100vw;
     background-attachment: fixed;
@@ -106,3 +156,59 @@ body{
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
+.win-star{
+    width: 600px;
+    margin-left: 10%;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+.win-game{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+.rank-table{
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+td{
+    /* background: rgb(252, 143, 53); */
+    background:radial-gradient(rgb(247, 184, 14),rgb(252, 150, 34));
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+}
+.playagain{
+    color: rgb(248, 246, 246);
+    background:rgb(214, 47, 29);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    margin-left: 122px;
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
+
+}
+
+th{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: rgb(47, 107, 219);
+    background: powderblue;
+    border-radius: 8px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 500px 400px;
+    grid-template-rows: 110px 1fr;
+    grid-gap: 60px;
+
+
+}
+
