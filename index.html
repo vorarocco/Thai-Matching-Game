@@ -1,203 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thai Matching</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Thai Alphabet</h1>
     <h2>maching game</h2>
     <div class="overlay-start visible">
-        <img class="overlay-playbutton" src="images/playbt.png" alt="" srcset="">
+      <img
+        class="overlay-playbutton"
+        src="images/playbt.png"
+        alt=""
+        srcset=""
+      />
     </div>
+
+    <!-- time -->
     <p class="timeText">Timer :<span class="timer">00</span></p>
 
-<div class="game-container">
-            <!-- no card -->
-        <div class="card no-card" ></div>
-        <div class="card x">
-             <!-- 1 -->
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 2 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 3 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- no card -->
-        <div class="card no-card" ></div>
-
-             <!-- 4 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 5 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 6 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 7 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 8 -->
-             <!-- no card -->
-        <div class="card no-card" ></div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-             <!-- 9 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <!-- 10 -->
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        <div class="card x">
-            <div class="card-back">
-                <img class="sun" src="images/sun.png" alt="click here">
-            </div>
-            <div class="card-front">
-                <img class="ans">
-            </div>
-        </div>
-        
-
+    <!-- win -->
+    <div class="you-win">
+        <img class = youwinimg src="images/youwin.png" alt="" srcset="">
+        <a class="linktowinpage" href="win.html"><button class="see-score">Click here to see your score!</button></a>
     </div>
 
+    <div class="game-container">
+      <!-- no card -->
+      <div class="card no-card"></div>
+      <div class="card x">
+        <!-- 1 -->
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- no card -->
+      <div class="card no-card"></div>
+
+      <!-- 4 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 8 -->
+      <!-- no card -->
+      <div class="card no-card"></div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+      <div class="card x">
+        <div class="card-back">
+          <img class="sun" src="images/sun.png" alt="click here" />
+        </div>
+        <div class="card-front">
+          <img class="ans" />
+        </div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
