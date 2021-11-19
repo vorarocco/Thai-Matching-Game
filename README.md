@@ -41,8 +41,8 @@
 - As a player I would like to be able to restart the game after a win.
 
 ## Wireframes
-![Getting Started](snipgame/wireframes1.jfif)
-![Getting Started](snipgame/wireframes2.jfif)
+![pic6](snipgame/wireframes1.jfif)
+![pic7](snipgame/wireframes2.jfif)
 
  ## Descriptions of any Unsolved problems or major hurdles you had to overcome
 
