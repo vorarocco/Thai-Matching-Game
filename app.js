@@ -63,7 +63,7 @@ function win() {
     //     document.querySelector
     // })
   
-  console.log("win!")
+  // console.log("win!")
 }
 
 // start
@@ -72,6 +72,9 @@ function startGame() {
     .querySelector(".overlay-playbutton")
     .addEventListener("click", () => {
       document.querySelector(".overlay-start").classList.remove("visible");
+      let startSound = new Audio("sound/songalong.mp3")
+      startSound.play()
+    
 
       // timer
       let playerTimer = setInterval(timeRun, 1000);
@@ -88,7 +91,9 @@ function startGame() {
           cards[i].addEventListener("click", () => {
             cards[i].classList.remove("x");
             selectCard.push(cards[i]);
-            if (selectCard.length === 2) {
+            let clickSound = new Audio("sound/flip.wav")
+              clickSound.play()
+              if (selectCard.length === 2) {
               setTimeout(checkForMatch, 500);
             }
             // console.log(selectCard)
@@ -98,15 +103,16 @@ function startGame() {
           function checkForMatch(card1, card2) {
             let cardF = selectCard[0];
             let cardS = selectCard[1];
-            console.log(
-              cardF.children[1].children[0],
-              cardS.children[1].children[0]
-            );
+            // console.log(
+            //   cardF.children[1].children[0],
+            //   cardS.children[1].children[0]
+            // );
 
             if (
               cardF.children[1].children[0].src ===
               cardS.children[1].children[0].src
-            ) {
+            ) { let matchSound = new Audio("sound/match.wav")
+            matchSound.play()
               matchedCard.push(card1, card2);
               if (matchedCard.length === 20) {
                 win();
@@ -127,3 +133,20 @@ function startGame() {
     });
 }
 startGame();
+
+// let playerName = document.querySelector(".player-name")
+// let submitBT= document.querySelector(".submit-bt")
+// let finalTime = document.querySelector(".timer").innerText
+// let topTenRecent = localStorage.getItem("topTenRecent");
+
+// let hightScores = JSON.parse(localStorage.getItem("hightScores")) || [];
+
+// submitBT.addEventListener("click" , ()=>{
+//   localStorage.setItem("hightScores",[...hightScores, playerName])
+// }) 
+
+
+
+// function topTen(){
+
+// }
