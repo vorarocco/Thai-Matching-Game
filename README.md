@@ -45,5 +45,6 @@
 ![Getting Started](snipgame/wireframes2.jfif)
 
  ## Descriptions of any Unsolved problems or major hurdles you had to overcome
+ 
  - At first I have a hard time to create function but after I finished my first function another one it's getting better same as the CSS after the first page I work on it fastter and more comfortable  
  - I still have a hard time to do Top10 rank
