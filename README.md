@@ -3,23 +3,23 @@
 
  - Click "play" to start the game.
 
-![Getting Started](snipgame/start.png)
+![pic1](snipgame/start.png)
 
 - Play the game by "click" a card then another to matching a pair.
 
-![Getting Started](snipgame/game1.png)
+![pic2](snipgame/game1.png)
 
 - When the cards matched it will stay opened.
 
-![Getting Started](snipgame/game2.png)
+![pic3](snipgame/game2.png)
 
 - When the cards match all 10 pairs you win! and unlog to sing alphabet song.
 
-![Getting Started](snipgame/win.png)
+![pic4](snipgame/win.png)
 
 - You can sing along with the song and learn Thai alphabet. Also if you want to play again you can! 
 
-![Getting Started](snipgame/vdo.png)
+![pic5](snipgame/vdo.png)
 
 ## Built With
 - [HTML](#html)
@@ -45,6 +45,6 @@
 ![Getting Started](snipgame/wireframes2.jfif)
 
  ## Descriptions of any Unsolved problems or major hurdles you had to overcome
- 
+
  - At first I have a hard time to create function but after I finished my first function another one it's getting better same as the CSS after the first page I work on it fastter and more comfortable  
  - I still have a hard time to do Top10 rank
