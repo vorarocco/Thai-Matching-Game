@@ -177,8 +177,9 @@ body {
 }
 /* -----------------------play again----------------------------- */
 .win-star {
-  width: 600px;
-  margin-left: 10%;
+  width: 400px;
+  /* margin-top: 15%; */
+  margin-left: 60%;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -206,9 +207,14 @@ td {
   font-size: 30px;
   margin-top: 15px;
   border-radius: 8px;
-  margin-left: 122px;
+  margin-left: 50%;
   animation: shake 0.8s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; 
+}
+a{
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 0px;
 }
 
 th {
@@ -222,11 +228,19 @@ th {
 .grid-container {
   display: grid;
   grid-template-columns: 500px 400px;
-  grid-template-rows: 110px 1fr;
-  grid-gap: 60px;
+  grid-template-rows: 60px 1fr 100px;
+  grid-gap: 10px;
 }
 
 /*-------------------------------- win------------------------------------- */
+iframe{
+  grid-column: 1;
+  grid-row: 2;
+  justify-content: space-between;
+  margin-left: 20%;
+  /* margin-top: 10%; */
+}
+
 .see-score{
     color:  rgb(255, 253, 253);
     font-size: 30px;

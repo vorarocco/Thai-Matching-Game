@@ -133,20 +133,3 @@ function startGame() {
     });
 }
 startGame();
-
-// let playerName = document.querySelector(".player-name")
-// let submitBT= document.querySelector(".submit-bt")
-// let finalTime = document.querySelector(".timer").innerText
-// let topTenRecent = localStorage.getItem("topTenRecent");
-
-// let hightScores = JSON.parse(localStorage.getItem("hightScores")) || [];
-
-// submitBT.addEventListener("click" , ()=>{
-//   localStorage.setItem("hightScores",[...hightScores, playerName])
-// }) 
-
-
-
-// function topTen(){
-
-// }
