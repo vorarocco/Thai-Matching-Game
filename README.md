@@ -3,15 +3,17 @@
 
  - Click "play" to start the game.
 
-![pic1](snipgame/start.png)
+![pic1]<img width="949" alt="game1" src="https://user-images.githubusercontent.com/91036693/142706551-4dcc3e80-03ec-4a37-9393-a4c9444fbd3f.png">
+
 
 - Play the game by "click" a card then another to matching a pair.
 
-![pic2](snipgame/game1.png)
+![pic2]<img width="945" alt="game2" src="https://user-images.githubusercontent.com/91036693/142706571-748f8189-6fd0-49e4-b0cb-2aa569bd525e.png">
+
 
 - When the cards matched it will stay opened.
 
-![pic3](snipgame/game2.png)
+![pic3]
 
 - When the cards match all 10 pairs you win! and unlog to sing alphabet song.
 
