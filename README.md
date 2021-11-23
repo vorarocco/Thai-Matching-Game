@@ -3,23 +3,23 @@
 
  - Click "play" to start the game.
 
-![pic1]<img width="948" alt="start" src="https://user-images.githubusercontent.com/91036693/142706659-44c7eb67-21b5-4172-9918-41abe029fc59.png">
+<img width="948" alt="start" src="https://user-images.githubusercontent.com/91036693/142706659-44c7eb67-21b5-4172-9918-41abe029fc59.png">
 
 - Play the game by "click" a card then another to matching a pair.
 
-![pic2]<img width="949" alt="game1" src="https://user-images.githubusercontent.com/91036693/142706670-b9f2f2c2-f19a-4333-badc-028a3acc35cb.png">
+<img width="949" alt="game1" src="https://user-images.githubusercontent.com/91036693/142706670-b9f2f2c2-f19a-4333-badc-028a3acc35cb.png">
 
 - When the cards matched it will stay opened.
 
-![pic3]<img width="945" alt="game2" src="https://user-images.githubusercontent.com/91036693/142706683-2866be21-3612-4a9b-8b59-d1133f95188d.png">
+<img width="945" alt="game2" src="https://user-images.githubusercontent.com/91036693/142706683-2866be21-3612-4a9b-8b59-d1133f95188d.png">
 
 - When the cards match all 10 pairs you win! and unlog to sing alphabet song.
 
-![pic4]<img width="946" alt="win" src="https://user-images.githubusercontent.com/91036693/142706706-35e2f5c8-f395-4c5b-aba5-987cd3c4bb8c.png">
+<img width="946" alt="win" src="https://user-images.githubusercontent.com/91036693/142706706-35e2f5c8-f395-4c5b-aba5-987cd3c4bb8c.png">
 
 - You can sing along with the song and learn Thai alphabet. Also if you want to play again you can! 
 
-![pic5]<img width="959" alt="vdo" src="https://user-images.githubusercontent.com/91036693/142706710-c9eeae76-4bd6-4d30-8f30-288579e71119.png">
+<img width="959" alt="vdo" src="https://user-images.githubusercontent.com/91036693/142706710-c9eeae76-4bd6-4d30-8f30-288579e71119.png">
 
 ## Built With
 - [HTML](#html)
@@ -41,8 +41,8 @@
 - As a player I would like to be able to restart the game after a win.
 
 ## Wireframes
-![pic6](snipgame/wireframes1.jfif)
-![pic7](snipgame/wireframes2.jfif)
+(snipgame/wireframes1.jfif)
+(snipgame/wireframes2.jfif)
 
  ## Descriptions of any Unsolved problems or major hurdles you had to overcome
 
